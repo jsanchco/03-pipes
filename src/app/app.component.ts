@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   nombre = "Jesús";
+  nombre2 = "jesús sanchez corzo";
   numbers = [1,2,3,4,5,6,7,8,9,10];
   PI = Math.PI;
   a = 0.234;
@@ -24,5 +25,6 @@ export class AppComponent {
     setTimeout( ()=>resolve('Llegó la data!!!'), 3500 );
   });
   fecha = new Date();
+  video = "pEijQVEyDTU";
 
 }

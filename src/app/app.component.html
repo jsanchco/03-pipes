@@ -111,6 +111,18 @@
                 <td>date:'MMM - dd'</td>
                 <td>{{ fecha | date:'MMM - dd' }}</td>
             </tr>
+            <tr>
+                <th scope="row">17</th>
+                <td>{{ nombre2 }}</td>
+                <td>capitalizado:</td>
+                <td>{{ nombre2 | capitalizado }}</td>
+            </tr>
+            <tr>
+                <th scope="row">18</th>
+                <td>{{ nombre2 }}</td>
+                <td>capitalizado:false</td>
+                <td>{{ nombre2 | capitalizado:false }}</td>
+            </tr>
         </tbody>
     </table>
 
@@ -125,6 +137,11 @@
 
     <h4>JSON</h4>
     <pre>{{ heroe | json }}</pre>
+
+    <br>
+
+    <h4>YouTube <small>video</small></h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ video }}" frameborder="0"></iframe>
 
 
     <br><br><br><br><br><br><br><br>
