@@ -123,6 +123,17 @@
                 <td>capitalizado:false</td>
                 <td>{{ nombre2 | capitalizado:false }}</td>
             </tr>
+            <tr>
+                <th scope="row">19</th>
+                <td>{{ nombre }}</td>
+                <td>
+                    contrasena:{{ activar }}
+                    <br>
+                    <button (click)="activar = !activar" type="button" class="btn btn-outline-primary">Activar/desactivar
+                  </button>
+                </td>
+                <td>{{ nombre | contrasena:activar }}</td>
+            </tr>
         </tbody>
     </table>
 
@@ -141,7 +152,7 @@
     <br>
 
     <h4>YouTube <small>video</small></h4>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ video }}" frameborder="0"></iframe>
+    <iframe width="560" height="315" [src]="video | domseguro:'https://www.youtube.com/embed/'" frameborder="0"></iframe>
 
 
     <br><br><br><br><br><br><br><br>
