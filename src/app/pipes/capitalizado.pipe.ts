@@ -17,6 +17,6 @@ export class CapitalizadoPipe implements PipeTransform {
             nombres[0] = nombres[0][0].toUpperCase() + nombres[0].substring(1);
         }
 
-        return nombres.join(" ");
+        return nombres.join(" "); 
     }
 }
